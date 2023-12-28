@@ -34,6 +34,7 @@ public class proj{
         System.out.println("PRESS 1 TO ENTER THE QUIZZ ");
         int a=sc.nextInt();
         int count=0;
+        if(a==1){
         switch(a)
         {
         case 1:
@@ -41,7 +42,7 @@ public class proj{
             obj.getQ1();
             System.out.println("ANSWER: ");
             int q1=sc.nextInt();
-            if(q1==1){
+            if(q1==1 ){
                 count+=1;
             }
         }
@@ -82,6 +83,10 @@ public class proj{
             }
         }
         }
+    }
+    else{
+        System.out.println("Quizz End ");
+    }
         System.out.println("REPORT ");
         System.out.println("YOUR RESULT : "+ count + "/5 ");
         System.out.println("YOU HAVE SCORED "+ ((count*20)) + " % ");
